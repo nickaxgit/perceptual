@@ -1,0 +1,5 @@
+body {background-color:slateblue;font-family:Arial ;}
+footer{position:fixed;right:5px;bottom:5px;background-color:palegreen;font-size:small;padding:5px}
+.slider{width:80%}
+.pad10{padding:10px;}
+.submitButton{padding:10px;background-color:blueviolet;box-shadow: 6px 6px 6px rgba(0,0,0,.2);border:2px solid white;color:white;border-radius:5px}
