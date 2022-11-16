@@ -1,5 +1,10 @@
-body {background-color:slateblue;font-family:Arial ;}
+body {background-color:slateblue;font-family:Arial;text-align:center}
 footer{position:fixed;right:5px;bottom:5px;background-color:palegreen;font-size:small;padding:5px}
 .slider{width:80%}
 .pad10{padding:10px;}
-.submitButton{padding:10px;background-color:blueviolet;box-shadow: 6px 6px 6px rgba(0,0,0,.2);border:2px solid white;color:white;border-radius:5px}
+.submitButton{position:relative;margin-top:20px;padding:10px;background-color:blueviolet;box-shadow: 6px 6px 6px rgba(0,0,0,.2);border:2px solid white;color:white;border-radius:5px}
+#stimulus{max-height:60vh;max-width:100%}
+
+#slider {width:80%;margin-left:10%}
+#sliderLabels {display:flex;width:100%;margin-left:5%}
+#sliderLabels label{text-align:center;width:20%;color:white;}

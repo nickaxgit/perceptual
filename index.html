@@ -6,22 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css"></link>
+    <script src="./script.js" defer></script>
 </head>
 <body>
-    <h1>CrowdSurf Perceptual tests</h1>
+    <h1>CrowdSurf perceptual tests</h1>
 
     <div class="pad10">
-    <label>Your Prolific ID </label><input type="text">
+    <label>Your Prolific ID </label><input id="pid" type="text">
     </div>
 
     <div>
     <div>
-    <video id="x" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" controls autoplay muted playsinline crossorigin="anonymous"></video>
+    <video id="stimulus" src="" controls autoplay muted playsinline crossorigin="anonymous"></video>
     </div>
-    <div>
-    <label>Poor</label><input class='slider pad10' type="range" min="1" max="5" step="1"></input><label>Excellent</label>    
+    <div id="sliderDiv">
+        <h2>How you you rate this content ?</h2>
+        <input id='slider' class='slider' type="range" min="1" max="5" step="1"></input>
+        <div id="sliderLabels">
+            <label>Bad</label>
+            <label>Poor</label>
+            <label>Average</label>
+            <label>Good</label>    
+            <label>Excellent</label>
+        </div>    
+        <button id="submit" class="submitButton" onclick="submit()">Submit</button>
     </div>
-    <button class="submitButton">Submit</button>
+
     </div>
     
     <footer>Version 0.1</footer>
